@@ -1,9 +1,8 @@
-# cas-cif
+# conn-ccbc
 
-CleanBC Industry Fund project
+Intake for application for the Connected Communities BC funding program
 
-![Lifecycle:Maturing](https://img.shields.io/badge/Lifecycle-Maturing-007EC6)
+An experimental fork of the cas-cif project:
+https://github.com/bcgov/cas-cif
 
-## Documentation
-
-- [Developer and Application Documentation](./docs/README.md)
+![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-007EC6)
