@@ -15,7 +15,7 @@
     "build:relay": "mkdir -p __generated__ && relay-compiler",
     "pretest": "yarn run build:relay",
     "test": "NODE_OPTIONS=\"--unhandled-rejections=strict\" jest",
-    "test:e2e": "wait-on --timeout 60000 http://localhost:3004 && HAPPO_DOWNLOAD_ALL=true happo-e2e -- cypress run",
+    "test:e2e": "wait-on --timeout 60000 http://localhost:3000 && HAPPO_DOWNLOAD_ALL=true happo-e2e -- cypress run",
     "audit-deps": "improved-yarn-audit",
     "start": "NODE_ENV=production node --unhandled-rejections=strict dist/server/index.js",
     "cypress": "cypress open"

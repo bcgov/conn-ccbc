@@ -31,13 +31,13 @@ var config = convict({
   host: {
     doc: "Host for the app.",
     format: "host",
-    default: "http://localhost:3004",
+    default: "http://localhost:3000",
     env: "HOST",
   },
   port: {
     doc: "The port to bind app to.",
     format: "port",
-    default: 3004,
+    default: 3000,
     env: "PORT",
   },
   namespace: {
@@ -198,8 +198,8 @@ var config = convict({
 
 // In case default host is used with non-default port
 if (
-  config.get("host") === "http://localhost:3004" &&
-  config.get("port") !== 3004
+  config.get("host") === "http://localhost:3000" &&
+  config.get("port") !== 3000
 ) {
   config.load({ host: `http://localhost:${config.get("port")}` });
 }
